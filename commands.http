@@ -1,0 +1,26 @@
+
+# POST http://localhost:3000/api/employee/show
+# {
+#     "employeeID" : "5f771be93528201a540a1274"
+# }
+
+# POST http://localhost:3000/api/employee/delete?employeeID=5f771be93528201a540a1274
+
+
+
+# POST http://localhost:3000/api/employee/show
+# {
+#     "_id" : "5f771cc197a85f1aa0bdaa49"
+# }
+
+GET http://localhost:3000/api/employee/
+
+# POST http://localhost:3000/api/employee/store
+
+# {
+#     "name" : "Rahul kumar",
+#     "designation" : "Sr Developer",
+#     "email" :   "saurabh.niec711@gmail.com",
+#     "phone"     :   "9718087950",
+#     "age"       :   31,
+# }

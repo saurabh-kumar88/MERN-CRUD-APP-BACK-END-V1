@@ -55,14 +55,35 @@ app.use('/api/todo', TodoRoute);
 
 /** ---------- test end-point ------------------- */
 
+var api_info = "Info about Api endpoints\
+  + 1. get /api/todo/ : list all todos + \
+  + e.g. get mern-crud-app.herokuapp.com/api/todo/ + \
+  + 2. get /api/todo/show/32 : show item by id + \
+  + 3. post /api/todo/add/?title=foobar : add new item + \
+  + 4. path /api/todo/update/12/title=blabla : update item + \
+  + 5. delete /api/todo/delete/9 : delete item by id + \
+  + 6. get /api/todo/latest   : display newly added item " ;
+
+
 app.get('/api/home/', async (req, res) => {
-	
+  
+  
+
     try {
-      res.json({ message : 'Hello world..!!'})
+      res.json({ message : api_info})
     } catch (error) {
       res.json({ message : error })
     }
 });
 
+app.get('/' , async (req, res) => {
+
+  try {
+    res.json({ message : api_info})
+  } catch (error) {
+    res.json({ message : error })
+  }
+  
+});
 
 

@@ -3,11 +3,16 @@ const Joi       = require('joi');
 
 // show the list of Books
 const Index = async (req, res, next) => {  
+    // try {
+    //   const books = await Book.find({}).sort('-publication')
+    //   res.json(books);
+    // } catch (error) {
+    //   res.json({ message : error })
+    // }
     try {
-      const books = await Book.find({}).sort('-publication')
-      res.json(books);
-    } catch (error) {
-      res.json({ message : error })
+      res.json('foo bar');
+    } catch {
+      res.json({ message : error})
     }
   
 }
